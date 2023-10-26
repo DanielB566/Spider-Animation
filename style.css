@@ -4,8 +4,10 @@ html {
 
 /* Bonus */
 html:hover .spider {
-    top: -120%;
+  
 }
+
+
 
 .spider {
     position: absolute;
@@ -28,10 +30,55 @@ html:hover .spider {
     background: rgba(255,255,255, .7);
 }
 
+.spider2 {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 300%;
+
+    /* 4. Animatie */
+    animation: swing 2s infinite;
+    transform-origin: top;
+
+    /* Bonus */
+    transition: 1s ease-in-out;
+}
+
+.spider3 {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 300%;
+
+    /* 4. Animatie */
+    animation: swing 2s infinite;
+    transform-origin: top;
+
+    /* Bonus */
+    transition: 1s ease-in-out;
+}
+
+.spider .spiderweb {
+    width: 2px;
+    height: 200px;
+    margin-left: 49px;
+    background: rgba(255,255,255, .7);
+}
+
+
+
 .spider .body {
     width: 100px;
     height: 80px;
     background: #000;
+    position: relative;
+    border-radius: 50%;
+}
+
+.spider .body:hover {
+    width: 110px;
+    height: 100px;
+    background: white;
     position: relative;
     border-radius: 50%;
 }
@@ -41,7 +88,7 @@ html:hover .spider {
     height: 33px;
     position: absolute;
     bottom: 20px;
-    background: #fff;
+    background: red;
     border-radius: 50%;
 }
 
@@ -125,7 +172,7 @@ html:hover .spider {
     }
 
     45%, 95% {
-        transform: translateX(-110%);
+        transform: translateX(-10%);
     }
 }
 
@@ -139,4 +186,13 @@ html:hover .spider {
     50% {
         transform: translateY(-20px);
     }
+}
+
+
+.h1{
+    text-align: center;
+    margin-top: 300px;
+    margin-right: 100px;
+    font-family: creepster;
+   
 }
