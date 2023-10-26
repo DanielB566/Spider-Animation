@@ -2,11 +2,6 @@ html {
     background: #ff785a;
 }
 
-/* Bonus */
-html:hover .spider {
-  
-}
-
 
 
 .spider {
@@ -16,7 +11,7 @@ html:hover .spider {
     left: 30%;
 
     /* 4. Animatie */
-    animation: swing 2s infinite;
+    animation: swing .5s infinite;
     transform-origin: top;
 
     /* Bonus */
@@ -37,7 +32,7 @@ html:hover .spider {
     left: 300%;
 
     /* 4. Animatie */
-    animation: swing 2s infinite;
+    animation: swing 1s infinite;
     transform-origin: top;
 
     /* Bonus */
@@ -51,7 +46,7 @@ html:hover .spider {
     left: 300%;
 
     /* 4. Animatie */
-    animation: swing 2s infinite;
+    animation: swing .5s infinite;
     transform-origin: top;
 
     /* Bonus */
@@ -76,11 +71,12 @@ html:hover .spider {
 }
 
 .spider .body:hover {
-    width: 110px;
+    width: 115px;
     height: 100px;
     background: white;
     position: relative;
     border-radius: 50%;
+    transition: ease-in-out 1s;
 }
 
 .spider .body .eye {
@@ -90,6 +86,11 @@ html:hover .spider {
     bottom: 20px;
     background: red;
     border-radius: 50%;
+}
+
+.spider .body .eye:hover{
+    background: orange;
+    transition: ease-in-out 1s;
 }
 
 .spider .body .eye.left {
@@ -168,7 +169,7 @@ html:hover .spider {
 /* 1. Animatie */
 @keyframes look {
     0%, 40%, 100% {
-        transform: translateX(0); 
+        transform: translateX(5px); 
     }
 
     45%, 95% {
