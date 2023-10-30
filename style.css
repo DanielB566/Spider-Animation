@@ -68,6 +68,7 @@ html {
     background: #000;
     position: relative;
     border-radius: 50%;
+    transition: ease-in-out 1s;
 }
 
 .spider .body:hover {
